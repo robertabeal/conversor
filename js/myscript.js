@@ -128,13 +128,15 @@ function converterDecHex() {
 
 // hexadecimal para decimal
 function converterHexDec() {
-  let hexadecimalStr = parseInt(document.querySelector('#number').value.toString())
+  let hexadecimalStr = parseInt(document.querySelector('#number').value)
   const span = document.querySelector('.display');
   let decimal = parseInt(hexadecimalStr, 16);
+  document.getElementById("hexadecimalStr").value = parseInt(hexadecimal, 16);
   
  
   span.innerHTML = decimal
-}
+} 
+
 
 
 
