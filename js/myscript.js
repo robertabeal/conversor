@@ -127,11 +127,11 @@ function converterDecHex() {
 
 
 // hexadecimal para decimal
-function converterHexDec() {
+function converterHexDec(hex) {
+  return parseInt(hex, 16);
   let hexadecimalStr = parseInt(document.querySelector('#number').value)
   const span = document.querySelector('.display');
-  let decimal = parseInt(hexadecimalStr, 16);
-  document.getElementById("hexadecimalStr").value = parseInt(hexadecimal, 16);
+  let decimal = hexToDec(hexadecimalStr);
   
  
   span.innerHTML = decimal
